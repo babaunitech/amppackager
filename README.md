@@ -73,7 +73,7 @@ own and can obtain certificates for.
 
      [[URLSet]]
        [URLSet.Sign]
-         Domain = "amppackageexample.com"
+         Domain = "babaunitech.blogspot.com"
      ```
      More details can be found in [amppkg.example.toml](amppkg.example.toml).
   1. `amppkg -development`
@@ -98,7 +98,7 @@ container.
             openssl pkey -pubin -outform der |\
             openssl dgst -sha256 -binary | base64)\
          --enable-features=SignedHTTPExchange\
-            'data:text/html,<a href="https://localhost:8080/priv/doc/https://amppackageexample.com/">click me'
+            'data:text/html,<a href="https://localhost:8080/priv/doc/https://babaunitech.blogspot.com/">click me'
      ```
   2. Open DevTools. Check 'Preserve log'.
   3. Click the `click me` link.
@@ -114,7 +114,7 @@ prefetch](https://wicg.github.io/webpackage/draft-yasskin-wpack-use-cases.html#p
 works with SXGs.
 
   1. `go get -u github.com/ampproject/amppackager/cmd/amppkg_dl_sxg`.
-  2. `amppkg_dl_sxg https://localhost:8080/priv/doc/https://amppackageexample.com/`
+  2. `amppkg_dl_sxg https://localhost:8080/priv/doc/https://babaunitech.blogspot.com/`
   3. Stop `amppkg` with Ctrl-C.
   4. `go get -u github.com/ampproject/amppackager/cmd/amppkg_test_cache`.
   5. `amppkg_test_cache`
